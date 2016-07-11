@@ -1,0 +1,81 @@
+.container {
+  margin: 0 auto;
+  width: 720px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+#menu {
+  display: block;
+  /*Aqui empieza el gradiente de colores*/
+  background: rgba(212,228,239,1);
+  background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+  background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+  border-radius: 1em;
+  border: 1px solid black;
+  width: 80%;
+  margin-left: 2em;
+  padding: 1em;
+}
+
+li {
+  list-style-type: none;
+  width: 100%;
+  display: inline;
+
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 0 1em;
+  /*margin: 0;*/
+}
+
+#bordes {
+  border-right: 2px solid white;
+}
+
+.submenu li {
+  display: none;
+  /*visibility: hidden;*/
+  /*Aqui empieza el gradiente de colores*/
+  background: rgba(212,228,239,1);
+  background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+  background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+  border-radius: 1em;
+  border: 1px solid black;
+  width: 130%;
+}
+/*Este comando activa el hover el cual despliega el submenu al 'desactivar'
+el 'display: none' al activarlo con el 'block'*/
+#menu li:nth-child(1):hover .submenu li { 
+   display: block;
+}
+/*Sobre el inspect en la pesta-na de 'Elementos' se puede visualizar el formato
+de una linea seleccionada mediante una subpesta-na llamada 'Styles' donde metiante
+el boton 'tachuela' se puede fijar un elemento oculto para poder modificar sus
+atributos sobre la consola que se despliega en la pesta-na 'Styles'*/
+.submenu {
+  position: absolute;
+  /*left: 10px;*/
+  top: 164px;
+}
